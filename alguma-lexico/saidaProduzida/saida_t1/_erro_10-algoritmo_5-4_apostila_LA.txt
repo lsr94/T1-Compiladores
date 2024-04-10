@@ -1,0 +1,17 @@
+<'algoritmo','algoritmo'>
+<'declare','declare'>
+<'idade',IDENT>
+<':',':'>
+<'inteiro','inteiro'>
+<'leia','leia'>
+<'(','('>
+<'idade',IDENT>
+<')',')'>
+<'caso',IDENT>
+<'idade',IDENT>
+<'seja',IDENT>
+<'0',NUMINT>
+<':',':'>
+<'escreva','escreva'>
+<'(','('>
+Linha 11: " - simbolo nao identificado '

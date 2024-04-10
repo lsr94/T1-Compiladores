@@ -1,0 +1,9 @@
+<'algoritmo','algoritmo'>
+<'declare','declare'>
+<'valor',IDENT>
+<':',':'>
+<'inteiro','inteiro'>
+<'declare','declare'>
+<'ponteiro',IDENT>
+<':',':'>
+Linha 5: ^ - simbolo nao identificado '

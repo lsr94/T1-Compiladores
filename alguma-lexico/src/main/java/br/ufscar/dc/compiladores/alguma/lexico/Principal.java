@@ -3,6 +3,7 @@ package br.ufscar.dc.compiladores.alguma.lexico;
 import org.antlr.v4.runtime.CharStream;
 import org.antlr.v4.runtime.CharStreams;
 import org.antlr.v4.runtime.Token;
+import java.io.File;
 
 import java.io.FileWriter;
 
@@ -11,53 +12,76 @@ import java.io.FileWriter;
 
 public class Principal {
     
+    // Criação de buffer para armazenar a saída
     private static StringBuilder buffer = new StringBuilder();
     
     public static void main(String[] args) {
-        String name_result_file = args.length > 1
-        ? args[1]+args[0].split("entrada")[1]
-        : args[0].split("entrada")[1];
+        // Verificação de quantidade de argumentos válidos
+        if (args.length < 2) {
+            System.out.println("Uso: java -jar analisador-lexido-compilado.jar "
+                    + "<caminho para o arquivo de entrada> " + "<caminho para o arquivo de saída>");
+            System.exit(0);
+        }
 
+        // Definição do caminho de saída
+        String name_result_file = args[1];
         
-        //String name_result_file = args[0].split("casos-de-teste")[0] + "temp\\saidaProduzida\\saida_t1\\"+ args[0].split("entrada")[1];
-        //System.out.println(name_result_file);
-        // Escreve no arquivo com o buffer mesmo após a execução de system.exit()
+        // Criação do diretório de saída
+        File file = new File(name_result_file);
+        String directoryPath = file.getParent();
+        File directory = new File(directoryPath);
+        directory.mkdirs();
+
+
+        // Criação de hook que garante a escrita dos dados no arquivo de saída
+        // caso System.exit(-1) seja invocado por erro de sintaxe (classe CustomErrorListener)
         Runtime.getRuntime().addShutdownHook(new Thread(() -> {
-            System.out.println(buffer);
+            
+            // Escrita do conteúdo do buffer no arquivo de saída
             try (FileWriter writer = new FileWriter(name_result_file)) {
-                
+
                 writer.write(buffer.toString());
+                System.err.println("Arquivo escrito.");
+
             } catch (Exception e) {
+
                 System.err.println("Failed to write buffer to file: " + e.getMessage());
             }
         }));
 
         try {
             
-            // Reading program 
+            // Leitura dos caracteres
             CharStream cs = CharStreams.fromFileName(args[0]);
             AlgumaLexer lex = new AlgumaLexer(cs);
             
             Token t = null;
             String vocab_type = "";
-            System.out.println(args[0]);
 
-            // Removing and setting custom throwing error function  
+            // Removen a classe padrão de listeners para erros  
             lex.removeErrorListeners();
+            // Adicionando a classe CustomErrorListener com método customizado para erros de sintaxe (syntaxError)
             lex.addErrorListener(new CustomErrorListener(buffer));
             
+            // ------------------------------------------------------
+            // TO-DO: SE O TOKEN FOR INICIO DE COMENTÁRIO, IGNORAR ELE!
+            // ------------------------------------------------------
 
-            // Analyze token by token
+
+            // Análise a cada token
             while ((t = lex.nextToken()).getType() != Token.EOF) {
-                // Defining the type name 
-                // If the token matches with the first grammar rule, then the type is its own name
+                // Definição do tipo do token
+                // Caso o token seja palavra reservada, o nome do seu tipo é o próprio token
+                // Senão, busca o nome do tipo do token no vocabulário
                 if (t.getType()==1){
                     vocab_type = "\'"+t.getText()+"\'";
                 }else{
                     vocab_type = AlgumaLexer.VOCABULARY.getDisplayName(t.getType());
                 }
 
+                // Formata o texto para a especificação <'token',tipo>
                 String textToAppend = String.format("<'%s',%s>%n", t.getText(), vocab_type);
+                // Adiciona o novo token ao buffer
                 buffer.append(textToAppend);
             }
                

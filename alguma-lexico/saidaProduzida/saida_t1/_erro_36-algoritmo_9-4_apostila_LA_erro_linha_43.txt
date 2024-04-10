@@ -1,0 +1,7 @@
+<'funcao',IDENT>
+<'menorInteiro',IDENT>
+<'(','('>
+<'valor1',IDENT>
+<':',':'>
+<'inteiro','inteiro'>
+Linha 3: , - simbolo nao identificado '

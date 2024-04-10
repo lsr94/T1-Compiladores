@@ -1,0 +1,4 @@
+<'algoritmo','algoritmo'>
+<'declare','declare'>
+<'prenome',IDENT>
+Linha 4: , - simbolo nao identificado '

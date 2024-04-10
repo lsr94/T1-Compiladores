@@ -1,0 +1,4 @@
+<'algoritmo','algoritmo'>
+<'declare','declare'>
+<'lado1',IDENT>
+Linha 5: , - simbolo nao identificado '
