@@ -14,8 +14,13 @@ public class Principal {
     private static StringBuilder buffer = new StringBuilder();
     
     public static void main(String[] args) {
-        String name_result_file = args[0].split("casos-de-teste")[0] + "temp\\saidaProduzida\\saida_t1\\"+ args[0].split("entrada")[1];
-        System.out.println(name_result_file);
+        String name_result_file = args.length > 1
+        ? args[1]+args[0].split("entrada")[1]
+        : args[0].split("entrada")[1];
+
+        
+        //String name_result_file = args[0].split("casos-de-teste")[0] + "temp\\saidaProduzida\\saida_t1\\"+ args[0].split("entrada")[1];
+        //System.out.println(name_result_file);
         // Escreve no arquivo com o buffer mesmo após a execução de system.exit()
         Runtime.getRuntime().addShutdownHook(new Thread(() -> {
             System.out.println(buffer);
