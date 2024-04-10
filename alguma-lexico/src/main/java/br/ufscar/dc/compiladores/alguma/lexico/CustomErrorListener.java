@@ -1,4 +1,4 @@
-package main.java.br.ufscar.dc.compiladores.alguma.lexico;
+package br.ufscar.dc.compiladores.alguma.lexico;
 
 import org.antlr.v4.runtime.BaseErrorListener;
 import org.antlr.v4.runtime.RecognitionException;

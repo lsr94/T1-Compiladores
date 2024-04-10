@@ -1,16 +1,13 @@
 package br.ufscar.dc.compiladores.alguma.lexico;
 
-import java.io.IOException;
 import org.antlr.v4.runtime.CharStream;
 import org.antlr.v4.runtime.CharStreams;
 import org.antlr.v4.runtime.Token;
-import org.antlr.v4.runtime.RecognitionException;
 
 import java.io.FileWriter;
-import java.io.IOException;
-import java.io.File;
 
-import main.java.br.ufscar.dc.compiladores.alguma.lexico.CustomErrorListener;
+
+//import main.java.br.ufscar.dc.compiladores.alguma.lexico.CustomErrorListener;
 
 public class Principal {
     
@@ -22,7 +19,7 @@ public class Principal {
         // Escreve no arquivo com o buffer mesmo após a execução de system.exit()
         Runtime.getRuntime().addShutdownHook(new Thread(() -> {
             System.out.println(buffer);
-            try (FileWriter writer = new FileWriter("D:\\Documentos\\UFSCar\\Compiladores-2024.1\\alguma-lexico\\temp\\saida.txt")) {
+            try (FileWriter writer = new FileWriter("D:\\Documentos\\UFSCar\\Compiladores-2024.1\\T1\\alguma-lexico\\temp\\saida.txt")) {
                 
                 writer.write(buffer.toString());
             } catch (Exception e) {
