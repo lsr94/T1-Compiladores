@@ -14,12 +14,12 @@ public class Principal {
     private static StringBuilder buffer = new StringBuilder();
     
     public static void main(String[] args) {
-
-
+        String name_result_file = args[0].split("casos-de-teste")[0] + "temp\\saidaProduzida\\saida_t1\\"+ args[0].split("entrada")[1];
+        System.out.println(name_result_file);
         // Escreve no arquivo com o buffer mesmo após a execução de system.exit()
         Runtime.getRuntime().addShutdownHook(new Thread(() -> {
             System.out.println(buffer);
-            try (FileWriter writer = new FileWriter("D:\\Documentos\\UFSCar\\Compiladores-2024.1\\T1\\alguma-lexico\\temp\\saida.txt")) {
+            try (FileWriter writer = new FileWriter(name_result_file)) {
                 
                 writer.write(buffer.toString());
             } catch (Exception e) {
@@ -35,7 +35,7 @@ public class Principal {
             
             Token t = null;
             String vocab_type = "";
-
+            System.out.println(args[0]);
 
             // Removing and setting custom throwing error function  
             lex.removeErrorListeners();
