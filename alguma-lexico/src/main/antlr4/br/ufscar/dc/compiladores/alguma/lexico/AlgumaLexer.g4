@@ -1,6 +1,8 @@
 lexer grammar AlgumaLexer;
 
-PALAVRA_CHAVE :	'algoritmo' | 'declare' | 'inteiro' | 'real' | 'literal'  | 'leia' | 'escreva' | 'fim_algoritmo' | 'logico' | 'se' | 'entao' | 'senao' | 'fim_se' | 'fim_caso' | 'seja' | 'caso'; 
+PALAVRA_CHAVE :	'algoritmo' | 'declare' | 'inteiro' | 'real' | 'literal'  | 'leia' | 'escreva' | 'fim_algoritmo' |
+ 'logico' | 'se' | 'entao' | 'senao' | 'fim_se' | 'fim_caso' | 'seja' | 'caso' | 'para' | 'ate' | 'faca' |
+ 'fim_para' | 'enquanto' | 'fim_enquanto'; 
 
 NUMINT: ('+'|'-')?('0'..'9')+;
 
@@ -17,10 +19,8 @@ WS: (' ' | '\t' | '\r' | '\n') {skip();};
 
 OP_REL:	'>' | '>=' | '<' | '<=' | '<>' | '=';
 
-OP_ARIT: '+' | '-' | '*' | '/';
+OP_ARIT: '+' | '-' | '*' | '/' | '%' | '^';
 
 OP_LOG: 'e' | 'nao' | 'ou';
 
-DELIM:	':';
-
-CARACTERE_ESP: '(' | ')' | ',' | '<-' | '-' | '..';
+CARACTERE_ESP: ':' | '(' | ')' | ',' | '<-' | '-' | '..' | '&';
