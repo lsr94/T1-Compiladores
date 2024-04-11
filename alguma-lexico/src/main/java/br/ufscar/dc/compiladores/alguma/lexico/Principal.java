@@ -73,7 +73,7 @@ public class Principal {
                 // Definição do tipo do token
                 // Caso o token seja palavra reservada, o nome do seu tipo é o próprio token
                 // Senão, busca o nome do tipo do token no vocabulário
-                if (t.getType()==1){
+                if (t.getType() == 1 || t.getType() == 11 || t.getType() == 12) {
                     vocab_type = "\'"+t.getText()+"\'";
                 }else{
                     vocab_type = AlgumaLexer.VOCABULARY.getDisplayName(t.getType());
