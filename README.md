@@ -10,10 +10,11 @@ Para a execução do analisador, é necessário ter instalado Java (aceitável q
 ## Instruções de uso ##
 O trabalho foi desenvolvido usando a IDE Visual Studio Code, logo é esperado que para manter a integridade do código, a execução seja realizado no mesmo ambiente de desenvolvimento. Além disso, a execução ocorreu em dois sistemas operacionais diferentes: Linux (Ubuntu) e Windows.
 
-Para facilitar o *download* do trabalho, acesse a pasta: __ colocar uma pasta .zip para ser baixada DEPOIS DE FINALIZAR __
+Para facilitar o *download* do trabalho, acesse a pasta: [T1](https://drive.google.com/drive/folders/1dt64yya21XOnIvliX9bcZ54lf7g7lkDs?usp=drive_link).
 
 Após realizar o *download*, o projeto pode ser aberto no VS (visual studio). Veja abaixo como fazer:
----- colocar a imagem de como abrir aqui ----
+![](https://github.com/letMarchezi/T1/assets/110498717/c3dd0f2a-c792-4519-96a6-775352a1e38e)
+
 
 * Avisos: coloque a pasta baixada em um diretório de fácil acesso e que não possua um caminho muito longo, pois isso pode dificultar o entendimento para a linguagem Java e gerar erros.
 
@@ -37,11 +38,11 @@ Um exemplo de execução é a seguinte:
 
 			coloque o seu :)
 
-Este é um exemplo executando apenas um teste. Há 37 casos a serem testados para este trabalho, todos passados pelo professor. Acesse a pasta completa em: __ COLOCAR A PASTA PARA CAMINHO NO DRIVE __
-Veja que, além dos testes de entrada esperados, há também uma pasta para o que é esperado (saida), assim é possível comparar com a saída que realmente obtivemos.
+Este é um exemplo executando apenas um teste. Há 37 casos a serem testados para este trabalho, todos passados pelo professor. Acesse a pasta completa em: [casos-de-teste](https://drive.google.com/drive/folders/1zY3y4j8-SUVzVTt4kj6t695kdJlFLd1L?usp=drive_link). 
+Veja que, além dos testes de entrada, há também uma pasta para o que é esperado (saida), assim é possível comparar com a saída que realmente obtivemos.
 
 ## Gramática ##
-A gramática utilizada no desenvolvimento do trabalho foi a especificada nos casos de teste apresentados acima e vista em sala de aula. Para conferir a gramática em mais detalhes, recomenda-se a visualização do arquivo __ COLOCAR LINK __. Abaixo, há uma breve explicação da gramática criada:
+A gramática utilizada no desenvolvimento do trabalho foi a especificada nos casos de teste apresentados acima e vista em sala de aula. Para conferir a gramática em mais detalhes, recomenda-se a visualização do arquivo __ COLOCAR LINK PARA O DRIVE __. Abaixo, há uma breve explicação da gramática criada:
 
 - PALAVRA_CHAVE: são encontradas todas as palavras-chave utilizadas nos algoritmos de teste. Ela devem ser imprimidas na forma <'palavra-chave','palavra-chave'>;
 - OP_ARIT, OP_REL, OP_LOG: nestes padrões são especificados, respectivamente, os operadores aritméticos, relacionais e lógicos que são utilizados nos algoritmos de teste. Estes devem ser imprimidos da seguinte forma <'operador','operador'>;
@@ -50,4 +51,4 @@ A gramática utilizada no desenvolvimento do trabalho foi a especificada nos cas
 - IDENT: este padrão é responsável por definir o que pode ser considerado um identificador (ou variável) dentro dos algoritmos. Identificadores são cadeias iniciadas por letras e seguidar por letras ou números, além do símbolo de _. Devem ser imprimidos da forma <'exemplo111',IDENT>;
 - CADEIA: este padrão identifica uma cadeia de caracteres (ou string) dentro dos algoritmos. As cadeias são definidas por sequências de quaisquer símbolos que estão entre aspas duplas. Devem ser imprimidos da forma <'"string"',CADEIA>;
 - COMENTARIO: os comentários são ignorados pelo analisador léxico, de modo que não geram tokens. São identificados por caracteres que estão entre chaves. São reconhecidos pelo padrão { comentario };
-- WS: define espaços em branco, quebras de linha e tabulações, que também são ignorados pelo analisar léxico. ;
+- WS: define espaços em branco, quebras de linha e tabulações, que também são ignorados pelo analisar léxico;
