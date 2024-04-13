@@ -8,7 +8,7 @@ Para a execução do analisador, é necessário ter instalado Java (aceitável q
 - A dupla usou, especificadamente, a versão mais atual do Java, que no atual momento do trabalho é a *19.0.2*.
 
 ## Instruções de uso ##
-O trabalho foi desenvolvido usando a IDE Visual Studio Code, logo é esperado que para manter a integridade do código, a execução seja realizado no mesmo ambiente de desenvolvimento. Além disso, a execução ocorreu em dois sistemas operacionais diferentes: Linux (Ubuntu) e Windows.
+O trabalho foi desenvolvido usando a IDE Visual Studio Code, logo é esperado que para manter a integridade do código, a execução seja realizada no mesmo ambiente de desenvolvimento. Além disso, a execução ocorreu em dois sistemas operacionais diferentes: Linux (Ubuntu) e Windows.
 
 Para facilitar o *download* do trabalho, acesse a pasta: [T1](https://drive.google.com/drive/folders/1dt64yya21XOnIvliX9bcZ54lf7g7lkDs?usp=drive_link).
 
