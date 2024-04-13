@@ -25,9 +25,9 @@ Para executar é necessário localizar o arquivo **alguma-lexico-1.0-SNAPSHOT-ja
 		java -jar (diretório do arquivo .jar) (diretório do caso de teste) (diretório do arquivo de saída)
 
 Onde:
-	* O diretório do arquivo .jar é a localização do arquivo alguma-lexico-1.0-SNAPSHOT-jar-with-dependencies.jar;
-	* O diretório do caso de teste é a localização de um arquivo.txt que contém um algoritmo que será analisado pelo programa;
-	* O diretório do arquivo de saída é a localização do arquivo.txt onde será apresentado o resultado da análise. Caso o arquivo não exista ainda, ele será criado.
+- O diretório do arquivo .jar é a localização do arquivo alguma-lexico-1.0-SNAPSHOT-jar-with-dependencies.jar;
+- O diretório do caso de teste é a localização de um arquivo.txt que contém um algoritmo que será analisado pelo programa;
+- O diretório do arquivo de saída é a localização do arquivo.txt onde será apresentado o resultado da análise. Caso o arquivo não exista ainda, ele será criado.
 
 Um exemplo de execução é a seguinte:
 - Linux
