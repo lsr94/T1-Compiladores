@@ -7,7 +7,6 @@ import java.io.File;
 
 import java.io.FileWriter;
 
-
 //import main.java.br.ufscar.dc.compiladores.alguma.lexico.CustomErrorListener;
 
 public class Principal {
@@ -31,7 +30,6 @@ public class Principal {
         String directoryPath = file.getParent();
         File directory = new File(directoryPath);
         directory.mkdirs();
-
 
         // Criação de hook que garante a escrita dos dados no arquivo de saída
         // caso System.exit(-1) seja invocado por erro de sintaxe (classe CustomErrorListener)
@@ -58,7 +56,7 @@ public class Principal {
             Token t = null;
             String vocab_type = "";
 
-            // Removen a classe padrão de listeners para erros  
+            // Remove a classe padrão de listeners para erros  
             lex.removeErrorListeners();
             // Adicionando a classe CustomErrorListener com método customizado para erros de sintaxe (syntaxError)
             lex.addErrorListener(new CustomErrorListener(buffer));
@@ -67,19 +65,18 @@ public class Principal {
             // TO-DO: SE O TOKEN FOR INICIO DE COMENTÁRIO, IGNORAR ELE!
             // ------------------------------------------------------
 
-
             // Análise a cada token
             while ((t = lex.nextToken()).getType() != Token.EOF) {
                 // Definição do tipo do token
                 // Caso o token seja palavra reservada, o nome do seu tipo é o próprio token
                 // Senão, busca o nome do tipo do token no vocabulário
-                if (t.getType() == 1 || t.getType() == 8 || t.getType() == 9 || t.getType() == 10 || t.getType() == 11) {
+                if (t.getType() == 1 || t.getType() == 2 || t.getType() == 3 || t.getType() == 4 || t.getType() == 5) {
                     vocab_type = "\'"+t.getText()+"\'";
-                }else{
+                } else {
                     vocab_type = AlgumaLexer.VOCABULARY.getDisplayName(t.getType());
                 }
 
-                // Formata o texto para a especificação <'token',tipo>
+                // Formata o texto para a especificação <'token', tipo>
                 String textToAppend = String.format("<'%s',%s>%n", t.getText(), vocab_type);
                 // Adiciona o novo token ao buffer
                 buffer.append(textToAppend);
