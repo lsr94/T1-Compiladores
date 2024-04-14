@@ -18,7 +18,7 @@ Verifique se o Java e Maven estão definidos nas variáveis de ambiente de seu s
 ## Instruções de uso ##
 O trabalho foi desenvolvido usando a IDE Visual Studio Code e a execução ocorreu em dois sistemas operacionais diferentes: Linux (Ubuntu) e Windows 10.
 
-Para facilitar o *download* do trabalho, acesse a pasta: [T1](https://drive.google.com/drive/folders/1dt64yya21XOnIvliX9bcZ54lf7g7lkDs?usp=drive_link).
+Para facilitar o *download* do trabalho, acesse a pasta: ![T1](https://github.com/letMarchezi/T1-Construcao-Compiladores/tree/main).
 
 Após realizar o *download*, o projeto pode ser aberto no VS (visual studio). Veja abaixo como fazer:
 ![](https://github.com/letMarchezi/T1/assets/110498717/c3dd0f2a-c792-4519-96a6-775352a1e38e)
@@ -66,7 +66,7 @@ Um exemplo de execução é a seguinte:
 
 A análise léxica também pode ser realizada por meio do ![corretor automatico](https://github.com/dlucredio/compiladores-corretor-automatico/tree/master), executando o analisador em lotes em conjunto com a correção dos resultados, comparando a saída gerada com o resultado esperado. 
 
-Há 37 casos a serem testados para este trabalho. Acesse a pasta completa em: [casos-de-teste](https://drive.google.com/drive/folders/1zY3y4j8-SUVzVTt4kj6t695kdJlFLd1L?usp=drive_link). 
+Há 37 casos a serem testados para este trabalho. Acesse a pasta completa em: ![casos-de-teste](https://github.com/letMarchezi/T1-Construcao-Compiladores/tree/main/alguma-lexico/casos-de-teste/1.casos_teste_t1). 
 
 A execução do corretor automático é feita com o seguinte comando:
 
@@ -87,7 +87,7 @@ Exemplos:
 
 - Linux
 
-		seu exemplo ;D
+		java -jar home/lara/Documentos/t1-analisador-lexico/alguma-lexico/compiladores-corretor-automatico-1.0-SNAPSHOT-jar-with-dependencies.jar "java -jar home/lara/Documentos/t1-analisador-lexico/alguma-lexico/target/alguma-lexico-1.0-SNAPSHOT-jar-with-dependencies.jar" gcc home/lara/Documentos/t1-analisador-lexico/alguma-lexico/temp home/lara/Documentos/t1-analisador-lexico/alguma-lexico/casos-de-teste "769701, 791003" t1
 
 - Windows
 
@@ -111,4 +111,4 @@ A gramática utilizada no desenvolvimento do trabalho foi a especificada nos cas
 
 	{ comentario. 
 - WS: define espaços em branco, quebras de linha e tabulações, que também são ignorados pelo analisar léxico;
-- ERRO: Identificador coringa que detecta qualquer padrão que não foi identificado nas regras anteriores.
+- ERRO: Identificador coringa que detecta qualquer padrão que não foi identificado nas regras anteriores;
