@@ -46,7 +46,7 @@ public class Principal {
             try (FileWriter writer = new FileWriter(name_result_file)) {
 
                 writer.write(buffer.toString());
-                System.err.println("Arquivo escrito.");
+                System.out.println("Arquivo escrito.");
 
             } catch (Exception e) {
 
