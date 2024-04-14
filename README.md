@@ -3,6 +3,11 @@ Neste repositório, encontra-se o primeiro trabalho realizado na disciplina de C
 O objetivo do mesmo é desenvolver um analisador léxico. Abaixo, encontra-se as instruções do que é necessário ter instalado na máquina pessoal para executar o analisador, assim como, compilar e executá-lo. Ademais, conterá a explicação da gramática criada mediante regras para atender aos casos de teste fornecidos pelo professor.
 Espera-se que este analisador léxico funcione nos sistemas operacionais: Linux, Windows e macOS.
 
+## Integrantes ##
+Este trabalho foi desenvolvido pelas alunas:
+- Lara Santiago Rodrigues, RA 769701
+- Letícia Bossatto Marchezi, RA 791003
+
 ## O que é necessário instalar na máquina ##
 Para a execução do analisador, é necessário ter instalado Java (aceitável qualquer versão a partir da *8*) e Maven (*versão 3.6.3*).
 - A dupla usou, especificadamente, a versão mais atual do Java, que no atual momento do trabalho é a *19.0.2*.
