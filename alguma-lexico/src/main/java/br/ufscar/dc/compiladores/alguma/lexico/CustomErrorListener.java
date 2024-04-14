@@ -19,7 +19,7 @@ public class CustomErrorListener extends BaseErrorListener {
         
         //System.out.println(msg.split("'")[1]);                        
         String symbolText = msg == null ? "unknown" : msg.split("'")[1];
-        buffer.append("Linha " + line + ": "+symbolText+" - simbolo nao identificado '");                     
+        buffer.append("Linha " + line + ": "+symbolText+" - simbolo nao identificado");                     
         System.exit(-1);
     }
 }
