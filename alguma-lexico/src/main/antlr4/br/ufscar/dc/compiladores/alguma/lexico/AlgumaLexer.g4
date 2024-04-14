@@ -19,9 +19,17 @@ NUM_REAL: ('0'..'9')+ ('.' ('0'..'9')+)?;
 
 IDENT: ('a'..'z'|'A'..'Z') ('_'|'a'..'z'|'A'..'Z'|'0'..'9')*;
 
-CADEIA : '"' ( ESC_SEQ | ~('"'|'\\'|'\n') )* '"';
-fragment ESC_SEQ	: '\\"';
+CADEIA : ('"' ( ESC_SEQ | ~('"'|'\\'|'\n') )* '"' ) | ('\'' ( ESC_SEQ_SQ | ~('\''|'\\'|'\n') )* '\'');
+
+fragment ESC_SEQ : '\\"';
+fragment ESC_SEQ_SQ : '\\\'';
 
 COMENTARIO : '{' ~('\n'|'}')* '}' -> skip;
 
+CADEIA_NAO_FECHADA: ('\'' (ESC_SEQ_SQ | ~('\n'|'\''|'\\'))* '\n') | ('"' ( ESC_SEQ | ~('\n'|'"'|'\\'))* '\n');
+
+COMENTARIO_NAO_FECHADO: '{' (~('\n'|'}'))* '\n';
+
 WS: (' ' | '\t' | '\r' | '\n') {skip();};
+
+ERRO: . ;
