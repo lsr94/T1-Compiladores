@@ -30,7 +30,7 @@ Após realizar o *download*, o projeto pode ser aberto no VS (visual studio). Ve
 
 Para compilar o projeto é necessário executar o segundo comando no diretório **alguma-lexico**:
 
-		mvn clean package
+	mvn clean package
 
 Assim, será gerado o arquivo do analisador sintático empacotado com as dependências dentro da pasta _alguma\_lexico/target_. Este arquivo será utilizado nos passos futuros para a execução.
 
@@ -64,7 +64,7 @@ Um exemplo de execução é a seguinte:
 
 ### Correção automática ###
 
-A análise léxica também pode ser realizada por meio do ![corretor automático](https://github.com/dlucredio/compiladores-corretor-automatico/tree/master), executando o analisador em lotes em conjunto com a correção dos resultados, comparando a saída gerada com o resultado esperado. 
+A análise léxica também pode ser realizada por meio do ![corretor automatico](https://github.com/dlucredio/compiladores-corretor-automatico/tree/master), executando o analisador em lotes em conjunto com a correção dos resultados, comparando a saída gerada com o resultado esperado. 
 
 Há 37 casos a serem testados para este trabalho. Acesse a pasta completa em: [casos-de-teste](https://drive.google.com/drive/folders/1zY3y4j8-SUVzVTt4kj6t695kdJlFLd1L?usp=drive_link). 
 
@@ -106,9 +106,9 @@ A gramática utilizada no desenvolvimento do trabalho foi a especificada nos cas
 - COMENTARIO: os comentários são ignorados pelo analisador léxico, de modo que não geram tokens. São identificados por caracteres que estão entre chaves. São reconhecidos pelo padrão { comentario };
 - CADEIA_NAO_FECHADA: Cadeias de aspas duplas ou aspas simples que não foram fechadas na mesma linha que foram iniciadas. Exemplo:
 
-'imprimindo a sequencia\n
+	'imprimindo a sequencia\n
 - COMENTARIO_NAO_FECHADO: Identifica comentários que não foram fechados na mesma linha. Exemplo:
 
-{ comentario. 
+	{ comentario. 
 - WS: define espaços em branco, quebras de linha e tabulações, que também são ignorados pelo analisar léxico;
 - ERRO: Identificador coringa que detecta qualquer padrão que não foi identificado nas regras anteriores.
