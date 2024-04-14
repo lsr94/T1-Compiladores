@@ -81,7 +81,7 @@ public class Principal {
             }
         } catch (Exception ex) {
             // Detecção de exceções
-            System.err.println("An error occurred: " + ex.getMessage());
+            System.err.println("Erro: " + ex.getMessage());
         }
 
         // Escreve o resultado do buffer no arquivo de saída
