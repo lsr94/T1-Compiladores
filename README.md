@@ -24,13 +24,13 @@ Após realizar o *download*, o projeto pode ser aberto no VS (visual studio). Ve
 * Avisos: coloque a pasta baixada em um diretório de fácil acesso e que não possua um caminho muito longo, pois isso pode dificultar o entendimento para a linguagem Java e gerar erros.
 
 ### Como executar? ###
-Para executar é necessário localizar o arquivo **alguma-lexico-1.0-SNAPSHOT-jar-with-dependencies.jar** na pasta _target_. Após localizar o arquivo, a execução poderá ser realizada da seguinte forma (independente do sistema operacional).
+Para executar é necessário localizar o arquivo **compiladores-corretor-automatico-1.0-SNAPSHOT-jar-with-dependencies.jar** na pasta _target_. Após localizar o arquivo, a execução poderá ser realizada da seguinte forma (independente do sistema operacional).
 * Abra um _prompt_ de comando e digite o seguinte comando:
 
 		java -jar (diretório do arquivo .jar) (diretório do caso de teste) (diretório do arquivo de saída)
 
 Onde:
-- O diretório do arquivo .jar é a localização do arquivo alguma-lexico-1.0-SNAPSHOT-jar-with-dependencies.jar;
+- O diretório do arquivo .jar é a localização do arquivo compiladores-corretor-automatico-1.0-SNAPSHOT-jar-with-dependencies.jar;
 - O diretório do caso de teste é a localização de um arquivo.txt que contém um algoritmo que será analisado pelo programa;
 - O diretório do arquivo de saída é a localização do arquivo.txt onde será apresentado o resultado da análise. Caso o arquivo não exista ainda, ele será criado.
 
