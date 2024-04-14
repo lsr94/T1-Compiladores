@@ -1,3 +1,10 @@
+/*
+1º trabalho prático da disciplina Construção de Compiladores - 2024/1
+Desenvolvido por:
+- Lara Santiago Rodrigues, 769701
+- Letícia Bossatto Marchezi, 791003
+*/
+
 package br.ufscar.dc.compiladores.alguma.lexico;
 
 import org.antlr.v4.runtime.CharStream;
