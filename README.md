@@ -5,8 +5,8 @@ Espera-se que este analisador léxico funcione nos sistemas operacionais: Linux,
 
 ## Integrantes ##
 Este trabalho foi desenvolvido pelas alunas:
-- Lara Santiago Rodrigues, RA 769701
-- Letícia Bossatto Marchezi, RA 791003
+- Lara Santiago Rodrigues, RA 769701 - Turma A
+- Letícia Bossatto Marchezi, RA 791003 - Turma A
 
 ## O que é necessário instalar na máquina ##
 Para a execução do analisador, é necessário ter instalado Java (aceitável qualquer versão a partir da *8*) e Maven (*versão 3.6.3*).
