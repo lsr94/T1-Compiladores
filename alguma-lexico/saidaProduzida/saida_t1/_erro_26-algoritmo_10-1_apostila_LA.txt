@@ -1,4 +1,0 @@
-<'algoritmo','algoritmo'>
-<'declare','declare'>
-<'soma',IDENT>
-Linha 6: , - simbolo nao identificado '

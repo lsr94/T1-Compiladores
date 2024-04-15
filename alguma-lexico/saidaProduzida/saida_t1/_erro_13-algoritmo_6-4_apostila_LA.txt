@@ -1,4 +1,0 @@
-<'algoritmo','algoritmo'>
-<'declare','declare'>
-<'celsius',IDENT>
-Linha 4: , - simbolo nao identificado '

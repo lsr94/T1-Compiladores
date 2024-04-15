@@ -1,7 +1,0 @@
-<'algoritmo','algoritmo'>
-<'tipo',IDENT>
-<'tVinho',IDENT>
-<':',':'>
-<'registro',IDENT>
-<'nome',IDENT>
-Linha 5: , - simbolo nao identificado '

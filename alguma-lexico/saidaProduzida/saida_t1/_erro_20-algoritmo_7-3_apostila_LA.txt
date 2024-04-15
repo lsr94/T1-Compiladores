@@ -1,4 +1,0 @@
-<'algoritmo','algoritmo'>
-<'declare','declare'>
-<'numeroPassos',IDENT>
-Linha 5: , - simbolo nao identificado '

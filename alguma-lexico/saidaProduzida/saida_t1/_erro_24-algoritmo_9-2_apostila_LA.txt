@@ -1,6 +1,0 @@
-<'tipo',IDENT>
-<'tRacional',IDENT>
-<':',':'>
-<'registro',IDENT>
-<'numerador',IDENT>
-Linha 5: , - simbolo nao identificado '

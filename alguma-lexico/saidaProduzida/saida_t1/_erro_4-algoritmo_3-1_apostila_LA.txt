@@ -1,4 +1,0 @@
-<'algoritmo','algoritmo'>
-<'declare','declare'>
-<'totalBebidas',IDENT>
-Linha 4: , - simbolo nao identificado '
