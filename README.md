@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ## T1 - Analisador Léxico ##
 Neste repositório, encontra-se o primeiro trabalho realizado na disciplina de Construção de Compiladores ofertada no 1º semestre de 2024 ministrada pelo Prof. Dr. Daniel Lucrédio.
 O objetivo do mesmo é desenvolver um analisador léxico. Abaixo, encontra-se as instruções do que é necessário ter instalado na máquina pessoal para executar o analisador, assim como, compilar e executá-lo. Ademais, conterá a explicação da gramática criada mediante regras para atender aos casos de teste fornecidos pelo professor.
@@ -112,3 +113,7 @@ A gramática utilizada no desenvolvimento do trabalho foi a especificada nos cas
 	{ comentario. 
 - WS: define espaços em branco, quebras de linha e tabulações, que também são ignorados pelo analisar léxico;
 - ERRO: Identificador coringa que detecta qualquer padrão que não foi identificado nas regras anteriores;
+=======
+# T1-Compiladores
+1º Trabalho Prático da Disciplina de Construção de Compiladores ofertada em 2024/1
+>>>>>>> a671de792870210a4de6b35c732534b5f22c3477
